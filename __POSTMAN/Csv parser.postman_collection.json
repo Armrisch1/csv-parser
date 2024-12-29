@@ -1,0 +1,67 @@
+{
+	"info": {
+		"_postman_id": "39cae75a-06d9-4da1-9f80-a7082feff67c",
+		"name": "Csv parser",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16067293"
+	},
+	"item": [
+		{
+			"name": "Save users",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "newsletter_id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "csv_file",
+							"type": "file",
+							"src": "postman-cloud:///1efc5612-bf2d-4990-afa7-b44ece36e614"
+						}
+					]
+				},
+				"url": {
+					"raw": "127.0.0.1:8080/save-csv-users",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"save-csv-users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Send newsletters",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8080/send-newsletters",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"send-newsletters"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

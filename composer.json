@@ -1,0 +1,17 @@
+{
+    "name": "arman/csv-task",
+    "autoload": {
+        "psr-4": {
+            "src\\": "src/app"
+        }
+    },
+    "authors": [
+        {
+            "name": "Arman",
+            "email": "armrisch@gmail.com"
+        }
+    ],
+    "require": {
+      "ext-pdo": "*"
+    }
+}
